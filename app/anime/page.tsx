@@ -64,7 +64,7 @@ export default async function AnimePage({
   const genre = params.genre || ''
   const rating = params.rating || ''
 
-  const url = new URL('https://api.jikan.moe/v4/anime')
+  const url = new URL('https://api.tenrai.org/v1/anime/')
   url.searchParams.set('page', page)
   url.searchParams.set('limit', '12')
   if (query) url.searchParams.set('q', query)
