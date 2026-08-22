@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 interface AnimeDetail {
   mal_id: number
   title: string
@@ -35,7 +37,7 @@ export default async function AnimeDetailPage({ params }: { params: Promise<{ id
 
   return (
     <div className="p-4 md:p-8 max-w-4xl mx-auto">
-      <a href="/anime" className="btn btn-sm btn-ghost mb-4"> Back</a>
+      <Link href="/anime" className="btn btn-sm btn-ghost mb-4">Back</Link>
 
       <div className="flex flex-col md:flex-row gap-6">
         <img
